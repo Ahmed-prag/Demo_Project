@@ -4,6 +4,15 @@
 
 Course nullCourse = {"NULL", "NULL", 0.0, 0};
 
+CourseResult createCourseResult(Course *course, double marks)
+{
+    CourseResult result;
+    result.course = course;
+    result.marks = marks;
+    result.completed = 1;
+    return result;
+}
+
 CourseResult createCompletedCourseResult(Course *course, double marks)
 {
     CourseResult result;
